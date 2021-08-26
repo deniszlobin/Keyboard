@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      #text-area {
+        display: flex;
+        margin: auto;
+        box-sizing: border-box;
+        width: 50%;
+        height: 150px;
+        font-size: 20px;
+        
+      }
+      .keyboard {
+        user-select: none;
+        margin: auto;
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+      }
+      .keyboard-line {
+        display: flex;
+        justify-content: center;
+        flex-shrink: 1;
+      }
+      .button {
+        position: relative;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font: inherit;
+        color: inherit;
+        border: 1px white solid;
+        border-radius: 4px;
+        background-image: linear-gradient(to bottom, #4d6398, #334266);
+        color: rgb(251, 230, 252);
+        cursor: pointer;
+      }
+      .button:hover {
+        background-image: linear-gradient(to bottom, #6380c4, #465d92);
+        border: black 1px solid;
+      }
+      .button:active {
+        background-image: linear-gradient(to bottom, #3a4c75e8, #253049);
+      }
+
+      .key {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding-left: 0;
+        padding-right: 0;
+        flex-grow: 1;
+        font-size: 24px;
+        line-height: 26px;
+      }
+      .space {
+        height: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea name="result" id="text-area" cols="30" rows="10"></textarea>
+
+    <section class="keyboard">
+      <div class="keyboard-line">
+        <button class="button key" type="button" id="index_10">ё</button>
+        <button class="button key" type="button" id="index_1">1</button>
+        <button class="button key" type="button" id="index_2">2</button>
+        <button class="button key" type="button" id="index_3">3</button>
+        <button class="button key" type="button" id="index_4">4</button>
+        <button class="button key" type="button" id="index_5">5</button>
+        <button class="button key" type="button" id="index_6">6</button>
+        <button class="button key" type="button" id="index_7">7</button>
+        <button class="button key" type="button" id="index_8">8</button>
+        <button class="button key" type="button" id="index_9">9</button>
+        <button class="button key" type="button" id="index_0">0</button>
+      </div>
+      <div class="keyboard-line">
+        <button class="button key" type="button" id="index_11">й</button>
+        <button class="button key" type="button" id="index_12">ц</button>
+        <button class="button key" type="button" id="index_13">у</button>
+        <button class="button key" type="button" id="index_14">к</button>
+        <button class="button key" type="button" id="index_15">е</button>
+        <button class="button key" type="button" id="index_16">н</button>
+        <button class="button key" type="button" id="index_17">г</button>
+        <button class="button key" type="button" id="index_18">ш</button>
+        <button class="button key" type="button" id="index_19">щ</button>
+        <button class="button key" type="button" id="index_20">з</button>
+        <button class="button key" type="button" id="index_21">х</button>
+        <button class="button key" type="button" id="index_22">ъ</button>
+        <button class="button key" type="button" id="backspace">
+          ⇦ Backspace
+        </button>
+      </div>
+      <div class="keyboard-line">
+        <button class="button key" type="button" id="capslock">CapsLock</button>
+        <button class="button key" type="button" id="index_24">ф</button>
+        <button class="button key" type="button" id="index_25">ы</button>
+        <button class="button key" type="button" id="index_26">в</button>
+        <button class="button key" type="button" id="index_27">а</button>
+        <button class="button key" type="button" id="index_28">п</button>
+        <button class="button key" type="button" id="index_29">р</button>
+        <button class="button key" type="button" id="index_30">о</button>
+        <button class="button key" type="button" id="index_31">л</button>
+        <button class="button key" type="button" id="index_32">д</button>
+        <button class="button key" type="button" id="index_33">ж</button>
+        <button class="button key" type="button" id="index_34">э</button>
+        <button class="button key" type="button" id="index_35">ё</button>
+      </div>
+      <div class="keyboard-line">
+        <button class="button key" type="button" id="index_36">я</button>
+        <button class="button key" type="button" id="index_37">ч</button>
+        <button class="button key" type="button" id="index_38">с</button>
+        <button class="button key" type="button" id="index_39">м</button>
+        <button class="button key" type="button" id="index_40">и</button>
+        <button class="button key" type="button" id="index_41">т</button>
+        <button class="button key" type="button" id="index_42">ь</button>
+        <button class="button key" type="button" id="index_43">б</button>
+        <button class="button key" type="button" id="index_44">ю</button>
+      </div>
+      <div class="keyboard-line">
+        <button class="button key space" type="button" id="space">
+          &#9141;
+        </button>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
